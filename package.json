@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "rewrite react-native style plain Object to StyleSheet object",
   "keywords": ["babel-plugin", "react-native", "style-rewrite"],
-  "repository": "",
+  "repository": "https://github.com/EatherToo/babel-plugin-react-native-style-rewrite.git",
   "license": "MIT",
-  "main": "lib/index.js",
-  "author": "Eather",
+  "main": "src/style-rewrite.js",
+  "author": "Eather<eathertoo@gmail.com>",
   "contributors": [],
   "scripts": {
     "test": "mocha --check-leaks --require @babel/register"
