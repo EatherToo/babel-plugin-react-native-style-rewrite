@@ -1,16 +1,16 @@
 [简体中文](./readme.zh.md) | [English](./readme.md)
 
-#### 这个插件出现的原因：
-  - 使用`StyleSheet`可以提高性能：
-    因为`StyleSheet.create()`创建的样式可以通过ID重复引用，而内联样式则每次都需要创建一个新的对象。
-    因为`StyleSheet`允许仅通过`bridge`发送一次样式。 所有后续使用都将引用一个`ID`（尚未实现）。
-  - 直接写一个`js`对象作为样式更方便直观一点
-  - 经过`babel`处理后自动将`js`对象形式的样式转换为`StyleSheet.create()`后的样式
+#### Reasons for the appearance of this plugin：
+  - Using `StyleSheet` can improve performance:
+    Because the style created by `StyleSheet.create()` can be repeatedly referenced by ID, while inline styles need to create a new object each time.
+    Because `StyleSheet` allows to send the style only once through `bridge`. All subsequent uses will refer to an `ID` (not yet implemented).
+  - It is more convenient and intuitive to write a `js` object directly as a style
+  - After being processed by `babel`, the styles in the form of `js` objects are automatically converted to the styles created by `StyleSheet.create()`
 
-#### 使用方法
-  1. 安装
+#### Instructions
+  1. installation
     `yarn add babel-plugin-react-native-style-rewrite` 或 `npm install babel-plugin-react-native-style-rewrite`
-  2. 使用
+  2. Usage
      找到babel的config文件，加入此插件配置
      ```js
         module.exports = {
@@ -28,9 +28,9 @@
 
      ``` 
 
-#### 这个插件的效果
+#### The effect of this plugin
 
-  转换前：
+  Before conversion:
   ```jsx
     const AppAll = () => {
     const [dialogShow, setDialogShow] = useState(false);
@@ -64,7 +64,7 @@
 
   AppRegistry.registerComponent(appName, () => AppAll);
   ```
-  转换后：
+  after conversion:
   ```jsx
     const AppAll = () => {
     // 隐私政策弹窗是否显示
