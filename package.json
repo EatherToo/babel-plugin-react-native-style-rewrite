@@ -7,7 +7,7 @@
     "react-native",
     "style-rewrite"
   ],
-  "repository": "https://github.com/EatherToo/babel-plugin-react-native-style-rewrite.git",
+  "repository": "git@github.com:EatherToo/babel-plugin-react-native-style-rewrite.git",
   "license": "MIT",
   "main": "src/style-rewrite.js",
   "author": "Eather<eathertoo@gmail.com>",
