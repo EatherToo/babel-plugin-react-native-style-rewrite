@@ -1,3 +1,5 @@
+[简体中文](./readme.zh.md) | [English](./readme.en.md)
+
 #### 这个插件出现的原因：
   - 使用`StyleSheet`可以提高性能：
     因为`StyleSheet.create()`创建的样式可以通过ID重复引用，而内联样式则每次都需要创建一个新的对象。
