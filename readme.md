@@ -11,8 +11,7 @@
   1. installation
     `yarn add babel-plugin-react-native-style-rewrite` 或 `npm install babel-plugin-react-native-style-rewrite`
   2. Usage
-     找到babel的config文件，加入此插件配置
-     ```js
+      ```js
         module.exports = {
           presets: ['module:metro-react-native-babel-preset'],
           plugins: [['import', {libraryName: '@ant-design/react-native'}]],
@@ -26,7 +25,7 @@
           },
         };
 
-     ``` 
+      ``` 
 
 #### The effect of this plugin
 
@@ -68,8 +67,7 @@
   ```jsx
     const AppAll = () => {
     // 隐私政策弹窗是否显示
-    const [dialogShow, setDialogShow] = useState(false); // 第一次打开app的加载状态
-
+    const [dialogShow, setDialogShow] = useState(false);
     const [loading, setLoading] = useState(true);
     return <Provider store={store}>
         {loading ? <>
